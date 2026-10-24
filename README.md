@@ -44,17 +44,13 @@ Copy `BepinEx/plugins/SVS_VirginBlood.dll` to `<GameRoot>/BepInEx/plugins/`. The
 ## Building
 
 ```powershell
-dotnet build src\SVS_VirginBlood.csproj -c Release "-p:GameRoot=E:\ILLGAMES\SamabakeScramble"
+dotnet build src\SVS_VirginBlood.csproj -c Release "-p:GameRoot=<path to the game folder>"
 ```
 
 ## Credits
 
 The blood streak images in `src/Resources/` were cut from KK_SkinEffects (GPL-3.0).
 
-## Building
-
-Set `GAME_ROOT` to the game folder (it needs BepInEx's generated `interop` assemblies), then `dotnet build src/SVS_VirginBlood.csproj -c Release`. The DLL is written to `BepinEx/plugins/`.
-
 ## License
 
-GPL-3.0, see `LICENSE`. The blood streak images in `src/Resources` are cut from KK_SkinEffects (GPL-3.0).
+GPL-3.0, see `LICENSE`.
